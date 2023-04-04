@@ -1,9 +1,12 @@
 html, body {
   background-color: lightgray;
+  background: linear-gradient(rgb(233, 229, 229), rgb(201, 192, 192), rgba(220, 220, 253, 0.664) );
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -22,6 +25,7 @@ nav ul {
   text-align: center;
 }
 
+
 nav ul li {
   display: inline-block;
 }
@@ -31,8 +35,10 @@ nav ul li a {
   padding: 10px;
   color: white;
   text-decoration: none;
+
 }
 
+/*
 .cuadro {
   background-color: lightgray;
   height: calc(100% - 50px);
@@ -40,13 +46,33 @@ nav ul li a {
   padding-top: 50px;
   margin-bottom: 20px;
 }
-
+*/
 .menu1 {
   background-color: grey;
   height: 100%;
   width: 100%;
 }
 
+.texto {
+  font-size: 40px;
+  text-align: center;
+  color: #212529;
+  padding-bottom: 5%;
+  
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.odontologos {
+  border-radius: 25px;
+}
+
+
+/*
 .texto {
   position: absolute;
   top: 50%;
@@ -56,9 +82,7 @@ nav ul li a {
   color: white;
   text-align: center;
 }
-.col-md-6 {
-  background-color: lightgrey;
-}
+*/
 
 
 form#cotizacion-form {
@@ -93,7 +117,6 @@ form#cotizacion-form textarea {
 }
 
 form#cotizacion-form button[type="submit"] {
-  background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
   font-size: 18px;
@@ -117,9 +140,9 @@ footer {
   text-align: center;
   padding: 1px 0;
   position: static;
-  bottom: 0;
   width: 100%;
   color: #fff;
+  margin-top: auto;
 }
 
 .social-icons {
@@ -143,6 +166,3 @@ footer {
 }
 
 
-.footer {
-  margin-top: auto;
-}
