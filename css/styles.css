@@ -188,3 +188,25 @@ footer {
       font-size: 14px;
       text-shadow: 0.1em 0.1em 0.2em black;
     }
+
+
+    .contenedor-contecto {
+      position: relative;
+    }
+
+    .contenedor-contecto img {
+      width: 100%;
+      border-radius: 10px;
+      opacity: 0.4;
+    }
+
+    .contenedor-contecto p {
+      font-size: 2rem;
+      color: white;
+      text-shadow: 0.1em 0.1em 0.2em black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+    }
