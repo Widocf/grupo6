@@ -71,7 +71,13 @@ h1 {
   border-radius: 25px;
 }
 
-
+h6 {
+  font-size: 17px;
+  text-align: center;
+  color: #212529;
+  padding-bottom: 5%;
+  font-weight: 300;
+}
 
 
 /*
