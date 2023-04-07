@@ -179,28 +179,28 @@ footer {
    max-height: 60vh;
     }
 
-    .slider-title{
+.slider-title{
       font-size: 22px;
       text-shadow: 0.1em 0.1em 0.2em black;
     }
 
-    .slider-subtitle{
+.slider-subtitle{
       font-size: 14px;
       text-shadow: 0.1em 0.1em 0.2em black;
     }
 
 
-    .contenedor-contecto {
+.contenedor-contecto {
       position: relative;
     }
 
-    .contenedor-contecto img {
+.contenedor-contecto img {
       width: 100%;
       border-radius: 10px;
       opacity: 0.4;
     }
 
-    .contenedor-contecto p {
+.contenedor-contecto p {
       font-size: 2rem;
       color: white;
       text-shadow: 0.1em 0.1em 0.2em black;
@@ -210,3 +210,7 @@ footer {
       transform: translate(-50%, -50%);
 
     }
+
+.i-contacto {
+  font-size: 30px;
+}
