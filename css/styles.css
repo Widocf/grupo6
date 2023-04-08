@@ -213,4 +213,11 @@ footer {
 
 .i-contacto {
   font-size: 30px;
+
+}
+
+.i-contacto li {
+  list-style: none;
+  display: inline-block;
+
 }
