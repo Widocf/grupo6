@@ -190,17 +190,17 @@ footer {
     }
 
 
-.contenedor-contecto {
+.contenedor-banner {
       position: relative;
     }
 
-.contenedor-contecto img {
+.contenedor-banner img {
       width: 100%;
       border-radius: 10px;
       opacity: 0.4;
     }
 
-.contenedor-contecto p {
+.contenedor-banner p {
       font-size: 2rem;
       color: white;
       text-shadow: 0.1em 0.1em 0.2em black;
