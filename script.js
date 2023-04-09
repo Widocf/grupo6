@@ -30,20 +30,24 @@ document.querySelector('#show-date').textContent = document.querySelector('#date
 }
 
 nextButtons.forEach((button) => {
-button.addEventListener('click', () => {
-    pasoActual++;
-showStep(pasoActual);
-if (pasoActual === 3) {
-    actualizarConfirmacion();
-}
-});
-});
-
-prevButtons.forEach((button) => {
-button.addEventListener('click', () => {
-pasoActual--;
-showStep(pasoActual);
-});
-});
+    button.addEventListener('click', () => {
+      pasoActual++;
+      // Añade la clase "slide" al fieldset actual
+      formWizard.querySelectorAll('fieldset')[pasoActual].classList.add('slide');
+      showStep(pasoActual);
+      if (pasoActual === 3) {
+        actualizarConfirmacion();
+      }
+    });
+  });
+  
+  prevButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      // Añade la clase "slide reverse" al fieldset actual
+      formWizard.querySelectorAll('fieldset')[pasoActual].classList.add('slide', 'reverse');
+      pasoActual--;
+      showStep(pasoActual);
+    });
+  });
 
 showStep(pasoActual);

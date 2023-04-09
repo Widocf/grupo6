@@ -50,3 +50,39 @@ form fieldset {
     background-color: #393a3b;
     color: white;
   }
+
+
+  /* Añade una transición para los fieldset para que se muevan lateralmente durante 0.5 segundos */
+fieldset {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Añade una clase para aplicar la animación de desplazamiento lateral */
+fieldset.slide {
+  animation: slideIn 0.5s forwards;
+}
+
+/* Define la animación de desplazamiento lateral */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Añade una clase para aplicar la animación de desplazamiento lateral en la dirección opuesta */
+fieldset.slide.reverse {
+  animation: slideOut 0.5s forwards;
+}
+
+/* Define la animación de desplazamiento lateral en la dirección opuesta */
+@keyframes slideOut {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
