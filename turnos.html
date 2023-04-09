@@ -9,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-sZCHgrflIG1YfyWupI8EVi6+G/nEsJy2QkMKJF5V7S5Q2nYV7GZx4UIu4t4cJt1eVti+IiMIP9ABhZJHXzpk+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+  <link rel="stylesheet" type="text/css" href="css/styles-turnos.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
@@ -38,12 +39,59 @@
         </nav>
     </header>
     
-    <div class="container my-5"> <!--inicio de container-->
-      <div class="texto">Turnos</div>
-    </div>
+    <form id="form-wizard">
+      <fieldset>
+        <legend>DATOS PERSONALES</legend>
+        <label for="first-name">Nombres:</label>
+        <input type="text" id="nombres" name="nombres">
+        <br>
+        <label for="last-name">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos">
+        <br>
+        <button class="next-button" type="button">Siguiente</button>
+      </fieldset>
+      
+      <fieldset>
+        <legend>INFORMACION DE CONTACTO</legend>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="phone">Telefono:</label>
+        <input type="tel" id="telefono" name="telefono">
+        <br>
+        <button class="prev-button" type="button">Regresar</button>
+        <button class="next-button" type="button">Siguiente</button>
+      </fieldset>
+      
+      <fieldset>
+        <legend>TURNO</legend>
+        <label for="doctor">Odontologo:</label>
+        <select id="odontologo" name="odontologo">
+          <option value="dr-smith">Dr. Suar</option>
+          <option value="dr-johnson">Dr. Perez</option>
+          <option value="dr-brown">Dr. Rojas</option>
+        </select>
+        <br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+        <br>
+        <button class="prev-button" type="button">Regresar</button>
+        <button class="next-button" type="button">Siguiente</button>
+      </fieldset>
+    
+      <fieldset>
+        <legend>CONFIRME DATOS</legend>
+        <p>Nombre: <span id="show-nombres"></span></p>
+        <p>Apellido: <span id="show-apellidos"></span></p>
+        <p>Email: <span id="show-email"></span></p>
+        <p>Telefono: <span id="show-telefono"></span></p>
+        <p>Odontologo: <span id="show-odontologo"></span></p>
+        <button class="prev-button" type="button">Regresar</button>
+        <button class="submit-button" type="submit">Confirmar</button>
+      </fieldset>
+    </form>
 
-
-    <!--footer-->
+        <!--footer-->
     <footer class="bg-dark text-light py-3">
       <div class="container">
         <div class="row justify-content-center">
@@ -76,5 +124,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
