@@ -221,3 +221,9 @@ footer {
   display: inline-block;
 
 }
+
+@media (max-width:600px) {
+  .contenedor-banner p {
+    font-size: 1.5rem;
+  }
+}
