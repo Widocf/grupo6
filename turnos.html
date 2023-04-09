@@ -39,58 +39,59 @@
         </nav>
     </header>
     
-    <form id="form-wizard">
-      <fieldset class="step">
-        <legend>DATOS PERSONALES</legend>
-        <label for="first-name">Nombres:</label>
-        <input type="text" id="nombres" name="nombres">
-        <br>
-        <label for="last-name">Apellidos:</label>
-        <input type="text" id="apellidos" name="apellidos">
-        <br>
-        <button class="next-button" type="button">Siguiente</button>
-      </fieldset>
+    <div class="container my-5"> <!--inicio de container-->
+      <form id="form-wizard">
+        <fieldset class="step">
+          <legend>DATOS PERSONALES</legend>
+          <label for="first-name">Nombres:</label>
+          <input type="text" id="nombres" name="nombres">
+          <br>
+          <label for="last-name">Apellidos:</label>
+          <input type="text" id="apellidos" name="apellidos">
+          <br>
+          <button class="next-button" type="button">Siguiente</button>
+        </fieldset>
+        
+        <fieldset class="step">
+          <legend>INFORMACION DE CONTACTO</legend>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <br>
+          <label for="phone">Telefono:</label>
+          <input type="tel" id="telefono" name="telefono">
+          <br>
+          <button class="prev-button" type="button">Regresar</button>
+          <button class="next-button" type="button">Siguiente</button>
+        </fieldset>
+        
+        <fieldset class="step">
+          <legend>TURNO</legend>
+          <label for="doctor">Odontologo:</label>
+          <select id="odontologo" name="odontologo">
+            <option value="dr-smith">Dr. Suar</option>
+            <option value="dr-johnson">Dr. Perez</option>
+            <option value="dr-brown">Dr. Rojas</option>
+          </select>
+          <br>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date">
+          <br>
+          <button class="prev-button" type="button">Regresar</button>
+          <button class="next-button" type="button">Siguiente</button>
+        </fieldset>
       
-      <fieldset class="step">
-        <legend>INFORMACION DE CONTACTO</legend>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <br>
-        <label for="phone">Telefono:</label>
-        <input type="tel" id="telefono" name="telefono">
-        <br>
-        <button class="prev-button" type="button">Regresar</button>
-        <button class="next-button" type="button">Siguiente</button>
-      </fieldset>
-      
-      <fieldset class="step">
-        <legend>TURNO</legend>
-        <label for="doctor">Odontologo:</label>
-        <select id="odontologo" name="odontologo">
-          <option value="dr-smith">Dr. Suar</option>
-          <option value="dr-johnson">Dr. Perez</option>
-          <option value="dr-brown">Dr. Rojas</option>
-        </select>
-        <br>
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date">
-        <br>
-        <button class="prev-button" type="button">Regresar</button>
-        <button class="next-button" type="button">Siguiente</button>
-      </fieldset>
-    
-      <fieldset class="step">
-        <legend>CONFIRME DATOS</legend>
-        <p>Nombre: <span id="show-nombres"></span></p>
-        <p>Apellido: <span id="show-apellidos"></span></p>
-        <p>Email: <span id="show-email"></span></p>
-        <p>Telefono: <span id="show-telefono"></span></p>
-        <p>Odontologo: <span id="show-odontologo"></span></p>
-        <button class="prev-button" type="button">Regresar</button>
-        <button class="submit-button" type="submit">Confirmar</button>
-      </fieldset>
-    </form>
-
+        <fieldset class="step">
+          <legend>CONFIRME DATOS</legend>
+          <p>Nombre: <span id="show-nombres"></span></p>
+          <p>Apellido: <span id="show-apellidos"></span></p>
+          <p>Email: <span id="show-email"></span></p>
+          <p>Telefono: <span id="show-telefono"></span></p>
+          <p>Odontologo: <span id="show-odontologo"></span></p>
+          <button class="prev-button" type="button">Regresar</button>
+          <button class="submit-button" type="submit">Confirmar</button>
+        </fieldset>
+      </form>
+    </div>
         <!--footer-->
     <footer class="bg-dark text-light py-3">
       <div class="container">
