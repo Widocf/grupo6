@@ -1,0 +1,52 @@
+form fieldset {
+    display: none;
+  }
+  
+  form fieldset:first-child {
+    display: block;
+  }
+  
+  form legend {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  form input {
+    display: block;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+  
+  form button:hover{
+    background-color: rgb(0, 0, 0);
+  }
+
+  form button {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  form .next-button {
+    background-color: #636566;
+    color: white;
+  }
+  
+  form .prev-button {
+    background-color: #636566;
+    color: white;
+  }
+  
+  form .submit-button {
+    background-color: #393a3b;
+    color: white;
+  }
