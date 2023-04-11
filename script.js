@@ -51,3 +51,35 @@ nextButtons.forEach((button) => {
   });
 
 showStep(pasoActual);
+// Obtener el formulario y los campos de entrada
+const form = document.getElementById("form-wizard");
+const nombres = document.getElementById("show-nombres");
+const apellidos = document.getElementById("show-apellidos");
+const email = document.getElementById("show-email");
+const telefono = document.getElementById("show-telefono");
+const odontologo = document.getElementById("show-odontologo");
+
+// Agregar un controlador de eventos al formulario para generar el PDF al enviar
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario
+
+  // Obtener los valores del formulario
+  const firstName = nombres.innerText;
+  const lastName = apellidos.innerText;
+  const emailAddress = email.innerText;
+  const phone = telefono.innerText;
+  const dentist = odontologo.innerText;
+
+  // Crear un nuevo objeto jsPDF
+  const doc = new jsPDF();
+
+  // Agregar contenido al PDF
+  doc.text(`Nombre: ${firstName}`, 10, 10);
+  doc.text(`Apellido: ${lastName}`, 10, 20);
+  doc.text(`Email: ${emailAddress}`, 10, 30);
+  doc.text(`Telefono: ${phone}`, 10, 40);
+  doc.text(`Odontologo: ${dentist}`, 10, 50);
+
+  // Descargar el archivo PDF
+  doc.save("confirmacion.pdf");
+});
