@@ -50,4 +50,4 @@ nextButtons.forEach((button) => {
     });
   });
 
-showStep(pasoActual);
+showStep(pasoActual); 
