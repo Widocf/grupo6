@@ -222,6 +222,19 @@ footer {
 
 }
 
+.img-grupo {
+  border-radius: 10px;
+  opacity: 0.9;
+  width: 800px;
+ 
+}
+
+.icono {
+  border-radius: 30px;
+  width: 150px;
+
+}
+
 @media (max-width:600px) {
   .contenedor-banner p {
     font-size: 1.5rem;
