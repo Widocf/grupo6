@@ -235,6 +235,10 @@ footer {
 
 }
 
+.error {
+  color: red;
+  font-size: 13px;
+}
 
 
 @media (max-width:600px) {
