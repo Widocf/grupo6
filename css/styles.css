@@ -176,16 +176,16 @@ footer {
   
 .slide img{
    border-radius: 10px;
-   max-height: 60vh;
+   max-height: 80vh;
     }
 
 .slider-title{
-      font-size: 22px;
+      font-size: 30px;
       text-shadow: 0.1em 0.1em 0.2em black;
     }
 
 .slider-subtitle{
-      font-size: 14px;
+      font-size: 19px;
       text-shadow: 0.1em 0.1em 0.2em black;
     }
 
