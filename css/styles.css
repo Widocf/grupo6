@@ -66,6 +66,14 @@ h1 {
   padding-top: 5%;
 }
 
+.card {
+  background-color: #4ba7f23b;
+}
+
+.card:hover {
+  opacity: 0.8;
+}
+
 .odontologos {
   border-radius: 25px;
 }
@@ -77,8 +85,6 @@ h6 {
   padding-bottom: 5%;
   font-weight: 300;
 }
-
-
 
 
 footer {
