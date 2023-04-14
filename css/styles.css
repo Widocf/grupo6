@@ -37,15 +37,6 @@ nav ul li a {
 
 }
 
-/*
-.cuadro {
-  background-color: lightgray;
-  height: calc(100% - 50px);
-  width: 100%;
-  padding-top: 50px;
-  margin-bottom: 20px;
-}
-*/
 .menu1 {
   background-color: grey;
   height: 100%;
@@ -121,43 +112,37 @@ footer {
   text-align: center;
 }
 
-  
-/*.slide img{
-   border-radius: 10px;
-    }
-*/
-
 .slider-title{
-      font-size: 33px;
-      text-shadow: 0.1em 0.1em 0.2em black;
-    }
+  font-size: 33px;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
 
 .slider-subtitle{
-      font-size: 21px;
-      text-shadow: 0.1em 0.1em 0.2em black;
-    }
+  font-size: 21px;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
 
 
 .contenedor-banner {
-      position: relative;
-    }
+    position: relative;
+  }
 
 .contenedor-banner img {
-      width: 100%;
-      border-radius: 10px;
-      opacity: 0.7;
-    }
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0.7;
+}
 
 .contenedor-banner p {
-      font-size: 2rem;
-      color: white;
-      text-shadow: 0.1em 0.1em 0.2em black;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    }
+}
 
 .i-contacto {
   font-size: 30px;
@@ -174,6 +159,7 @@ footer {
   border-radius: 10px;
   opacity: 1;
   width: 800px;
+  
 }
 
 .img-grupo:hover {
