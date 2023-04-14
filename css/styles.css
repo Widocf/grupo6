@@ -179,9 +179,16 @@ footer {
   font-size: 13px;
 }
 
+.btn {
+ color: black;
+background-color: #4BD6F2;
+border: none;
+}
 
 @media (max-width:600px) {
   .contenedor-banner p {
     font-size: 1.5rem;
   }
 }
+
+/* Paleta de colores: MAIN: #4864e6 SECUNDARIO: #F2F4FF ACENTO: #4BD6F2/
