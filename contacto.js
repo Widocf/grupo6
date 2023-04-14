@@ -23,7 +23,7 @@ $(document).ready(function() {
 			mensaje: { required:true, minlength: 20, maxlength: 500},
         },
         messages: {
-            nombre: { required: "* Es necesario que ingrese un nombe y apellido", minlength: "*La longitud debe ser mayor a 5 caracteres"},
+            nombre: { required: "* Es necesario que ingrese un nombre y apellido", minlength: "*La longitud debe ser mayor a 5 caracteres"},
             email: { required:"* Debe ingresar un email", email: "*Debe ingresar un email correcto"},
             asunto: { required: "* Debe ingresar un asunto", minlength: "*La longitud debe ser mayor a 5 caracteres"},
             mensaje: { required: "* Es necesario que ingrese un mensaje", minlength: "*La longitud del mensaje debe ser mayor a 20 caracteres"},
