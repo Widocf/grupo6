@@ -12,6 +12,8 @@ $(document).ready(function() {
 
 // Validacion Contacto con Jquery
 
+//*//*//*//*
+
 $(document).ready(function() {
 	$("#formularioContacto").validate({
 		rules: {
@@ -29,5 +31,3 @@ $(document).ready(function() {
         errorElement: "div"
         });
     })
-
-    //*
