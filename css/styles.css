@@ -68,10 +68,13 @@ h1 {
 
 .card {
   background-color: #F2F4FF;
+  overflow: hidden;
+  transition: .5s;
 }
 
 .card:hover {
-  opacity: 0.8;
+  box-shadow: 0 5px;
+  transform: translateY(-15px);
 }
 
 .odontologos {
@@ -142,7 +145,7 @@ footer {
 .contenedor-banner img {
       width: 100%;
       border-radius: 10px;
-      opacity: 0.4;
+      opacity: 0.6;
     }
 
 .contenedor-banner p {
@@ -169,9 +172,14 @@ footer {
 
 .img-grupo {
   border-radius: 10px;
-  opacity: 0.9;
+  opacity: 1;
   width: 800px;
- 
+}
+
+.img-grupo:hover {
+  opacity: 0.9;
+  transition: 1s;
+  
 }
 
 .icono {
@@ -185,6 +193,10 @@ footer {
   opacity: 0.7;
 }
 
+.form-control {
+  background-color: #F2F4FF;
+}
+
 .error {
   color: red;
   font-size: 13px;
@@ -195,6 +207,8 @@ footer {
 background-color: #4BD6F2;
 border: none;
 }
+
+
 
 @media (max-width:600px) {
   .contenedor-banner p {
