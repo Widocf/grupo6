@@ -24,7 +24,6 @@ nav ul {
   text-align: center;
 }
 
-
 nav ul li {
   display: inline-block;
 }
@@ -34,7 +33,6 @@ nav ul li a {
   padding: 10px;
   color: white;
   text-decoration: none;
-
 }
 
 .menu1 {
@@ -48,7 +46,6 @@ nav ul li a {
   text-align: center;
   color: #212529;
   padding-bottom: 5%;
-  
 }
 
 h1 {
@@ -79,7 +76,6 @@ h6 {
   padding-bottom: 5%;
   font-weight: 300;
 }
-
 
 footer {
   font-size: 15px;
@@ -122,7 +118,6 @@ footer {
   text-shadow: 0.1em 0.1em 0.2em black;
 }
 
-
 .contenedor-banner {
     position: relative;
   }
@@ -141,38 +136,43 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .i-contacto {
   font-size: 30px;
-
 }
 
 .i-contacto li {
   list-style: none;
   display: inline-block;
+}
 
+.redes {
+  color: #121111;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.redes:hover {
+  box-shadow: 0 0px;
+  transform: translateY(-5px);
 }
 
 .img-grupo {
   border-radius: 10px;
   opacity: 1;
   width: 800px;
-  
 }
 
 .img-grupo:hover {
   opacity: 0.9;
   transition: 1s;
-  
 }
 
 .icono {
   border-radius: 30px;
   width: 150px;
   opacity: 0.8;
-
 }
 
 .icono:hover {
@@ -189,12 +189,10 @@ footer {
 }
 
 .btn {
- color: white;
-background-color: #4BD6F2;
-border: none;
+  color: white;
+  background-color: #4BD6F2;
+  border: none;
 }
-
-
 
 @media (max-width:576px) {
   .contenedor-banner p {
