@@ -33,11 +33,13 @@ nav ul li a {
   padding: 10px;
   color: white;
   text-decoration: none;
+  transition: .5s;
 }
 
 nav ul li a:hover {
-  color: #000000;
-  font-weight: 500;
+  box-shadow: 0 0px;
+  transform: translateY(-2px);
+
 }
 
 .menu1 {
