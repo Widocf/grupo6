@@ -35,6 +35,11 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul li a:hover {
+  color: #000000;
+  font-weight: 500;
+}
+
 .menu1 {
   background-color: grey;
   height: 100%;
