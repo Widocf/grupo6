@@ -17,6 +17,8 @@ header {
   z-index: 999; 
 }
 
+
+
 nav ul {
   list-style: none;
   margin: 0;
@@ -37,8 +39,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  box-shadow: 0 0px;
-  transform: translateY(-2px);
+ transform: translateY(-2px);
 
 }
 
@@ -109,6 +110,14 @@ footer {
 .social-link:hover {
   color: #000000;
   text-decoration: none;
+}
+
+.ico-serv {
+  transition: .5s;
+}
+
+.ico-serv:hover {
+  transform: translateY(-5px);
 }
 
 .text-center {
@@ -199,6 +208,16 @@ footer {
   color: white;
   background-color: #4BD6F2;
   border: none;
+}
+
+.logo {
+  transform: scale(var(--escala, 1));
+  transition: transform 0.5s;
+}
+
+.logo:hover {
+  --escala: 1.02;
+  cursor: pointer;
 }
 
 @media (max-width:576px) {
