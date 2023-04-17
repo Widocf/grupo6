@@ -1,9 +1,8 @@
 .formulario-turno {
   width: 100%;
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
-
 
 ::selection{
   color: #fff;
@@ -11,7 +10,7 @@
 }
 .container2{
   width: 430px;
-  background: #abb3d7;
+  background: #F2F4FF;
   text-align: center;
   border-radius: 5px;
   padding: 50px 35px 10px 35px;
@@ -68,7 +67,7 @@ form .page .field button{
   width: 100%;
   height: calc(100% + 5px);
   border: none;
-  background: #4864e6;
+  background: #4BD6F2;
   margin-top: -20px;
   border-radius: 5px;
   color:#ffffff;
@@ -184,3 +183,4 @@ form .page .btns button.next{
   display: block;
   color: #4864e6;
 }
+
