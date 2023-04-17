@@ -1,4 +1,4 @@
-/const slidePage = document.querySelector(".slide-page");
+const slidePage = document.querySelector(".slide-page");
 const nextBtnFirst = document.querySelector(".firstNext");
 const prevBtnSec = document.querySelector(".prev-1");
 const nextBtnSec = document.querySelector(".next-1");
