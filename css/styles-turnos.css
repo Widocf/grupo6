@@ -184,3 +184,14 @@ form .page .btns button.next{
   color: #4864e6;
 }
 
+@media (max-width:576px) {
+  .container2 {
+    width: 344px;
+  }
+}
+
+@media (max-width:576px) {
+  .form-outer form .page .field {
+    width: 240px;
+  }
+}
