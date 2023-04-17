@@ -86,3 +86,16 @@ fieldset.slide.reverse {
     transform: translateX(100%);
   }
 }
+.step {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+Con esta regla, cada step tendrá una posición fija en la parte superior izquierda de la pantalla, cubriendo todo el espacio disponible. De esta forma, aunque se oculten y se muestren diferentes step al avanzar y retroceder en el formulario, todos estarán en la misma posición y no se moverán en la pantalla.
+
+
+
+
+

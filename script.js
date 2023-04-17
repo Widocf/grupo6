@@ -1,66 +1,81 @@
-//seleccionar elementos y almacenarlos en variables
+// Obtener los elementos del DOM
+const steps = Array.from(document.querySelectorAll('.step'));
+const prevBtns = Array.from(document.querySelectorAll('.prev-button'));
+const nextBtns = Array.from(document.querySelectorAll('.next-button'));
+const submitBtn = document.querySelector('.submit-button');
+const form = document.querySelector('form');
+const nombres = document.querySelector('#show-nombres');
+const apellidos = document.querySelector('#show-apellidos');
+const email = document.querySelector('#show-email');
+const telefono = document.querySelector('#show-telefono');
+const odontologo = document.querySelector('#show-odontologo');
 
-const formWizard = document.querySelector('#form-wizard');
-const nextButtons = document.querySelectorAll('.next-button');
-const prevButtons = document.querySelectorAll('.prev-button');
-
-let pasoActual = 0;
-
-//mostrar y ocultar los pasos
-
-function showStep(stepIndex) {
-const fieldsets = document.querySelectorAll('fieldset');
-fieldsets.forEach((fieldset, index) => {
-if (index === stepIndex) {
-fieldset.style.display = 'block';
-} else {
-fieldset.style.display = 'none';
-}
+// Ocultar todos los steps excepto el primero
+steps.forEach((step, index) => {
+  if (index !== 0) {
+    step.style.display = 'none';
+  }
 });
+
+// Función para mostrar el siguiente step
+function showNextStep(currentStep) {
+  const nextStep = currentStep.nextElementSibling;
+  currentStep.style.visibility = 'hidden';
+  nextStep.style.visibility = 'visible';
+  nextStep.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-// ojala muestre el resumen
-function actualizarConfirmacion() {
-document.querySelector('#show-nombres').textContent = document.querySelector('#nombres').value;
-document.querySelector('#show-apellidos').textContent = document.querySelector('#apellidos').value;
-document.querySelector('#show-email').textContent = document.querySelector('#email').value;
-document.querySelector('#show-telefono').textContent = document.querySelector('#telefono').value;
-document.querySelector('#show-odontologo').textContent = document.querySelector('#odontologo').value;
-document.querySelector('#show-date').textContent = document.querySelector('#date').value;
+// Función para mostrar el step anterior
+function showPrevStep(currentStep) {
+  const prevStep = currentStep.previousElementSibling;
+  currentStep.style.display = 'none';
+  prevStep.style.display = 'block';
+  prevStep.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-nextButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-      pasoActual++;
-      // Añade la clase "slide" al fieldset actual
-      formWizard.querySelectorAll('fieldset')[pasoActual].classList.add('slide');
-      showStep(pasoActual);
-      if (pasoActual === 3) {
-        actualizarConfirmacion();
-      }
-    });
-  });
-  
-  prevButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-      // Añade la clase "slide reverse" al fieldset actual
-      formWizard.querySelectorAll('fieldset')[pasoActual].classList.add('slide', 'reverse');
-      pasoActual--;
-      showStep(pasoActual);
-    });
-  });
 
-showStep(pasoActual);
-// Obtener el formulario y los campos de entrada
-const form = document.getElementById("form-wizard");
-const nombres = document.getElementById("show-nombres");
-const apellidos = document.getElementById("show-apellidos");
-const email = document.getElementById("show-email");
-const telefono = document.getElementById("show-telefono");
-const odontologo = document.getElementById("show-odontologo");
 
-// Agregar un controlador de eventos al formulario para generar el PDF al enviar
-form.addEventListener("submit", function (event) {
+// Agregar controladores de eventos a los botones prev y next
+prevBtns.forEach(prevBtn => {
+  prevBtn.addEventListener('click', event => {
+    const currentStep = event.target.parentElement;
+    showPrevStep(currentStep);
+  });
+});
+
+nextBtns.forEach(nextBtn => {
+  nextBtn.addEventListener('click', event => {
+    const currentStep = event.target.parentElement;
+    showNextStep(currentStep);
+  });
+});
+const nombresInput = document.getElementById('nombres');
+const apellidosInput = document.getElementById('apellidos');
+const emailInput = document.getElementById('email');
+const telefonoInput = document.getElementById('telefono');
+const odontologoInput = document.getElementById('odontologo');
+
+// Agregar un controlador de eventos al formulario para guardar los valores de los campos
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario
+
+  // Obtener los valores de los campos del formulario
+  const nombresValue = nombresInput.value;
+  const apellidosValue = apellidosInput.value;
+  const emailValue = emailInput.value;
+  const telefonoValue = telefonoInput.value;
+  const odontologoValue = odontologoInput.value;
+
+  // Actualizar los valores en la confirmación
+  document.querySelector('#show-nombres').textContent = nombresValue;
+  document.querySelector('#show-apellidos').textContent = apellidosValue;
+  document.querySelector('#show-email').textContent = emailValue;
+  document.querySelector('#show-telefono').textContent = telefonoValue;
+  document.querySelector('#show-odontologo').textContent = odontologoValue;
+});
+
+// Agregar controlador de eventos al formulario para generar el PDF al enviar
+form.addEventListener('submit', function (event) {
   event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario
 
   // Obtener los valores del formulario
@@ -81,5 +96,5 @@ form.addEventListener("submit", function (event) {
   doc.text(`Odontologo: ${dentist}`, 10, 50);
 
   // Descargar el archivo PDF
-  doc.save("confirmacion.pdf");
+  doc.save('confirmacion.pdf');
 });
