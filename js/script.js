@@ -41,7 +41,7 @@ submitBtn.addEventListener("click", function(){
   progressText[current - 1].classList.add("active");
   current += 1;
   setTimeout(function(){
-    alert("Your Form Successfully Signed up");
+    alert("Tu turno fue procesado correctamente");
     location.reload();
   },800);
 });
